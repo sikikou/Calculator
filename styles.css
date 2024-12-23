@@ -1,0 +1,146 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #0e141e; /* Solid background */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    width: 95%; /* Expanded container */
+    max-width: 1800px; /* Increased max width */
+    background: #000;
+    border-radius: 15px;
+    padding: 40px; /* Increased padding */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin: auto;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 50px; /* Larger font size */
+    font-weight: bold;
+    color: #f5a623; /* Bright gold */
+    margin-bottom: 30px;
+}
+
+/* Form and Buttons */
+form {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Increased gap for better spacing */
+    margin-bottom: 30px;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 15px; /* Larger input fields */
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #1e2430;
+    color: white;
+    flex: 1;
+    font-size: 18px;
+}
+
+button {
+    padding: 15px 25px; /* Larger buttons */
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    background-color: #3b4a6b;
+    color: white;
+}
+
+.btn.red {
+    background-color: #d9534f;
+}
+
+.btn.save {
+    background-color: #f5a623;
+    color: black;
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+/* Table Styling */
+.leaderboard-wrapper {
+    overflow-x: auto;
+    padding: 20px 0; /* Increased padding */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #111; /* Dark background for table */
+    color: white;
+    margin-top: 20px;
+    font-size: 20px; /* Larger font for readability */
+}
+
+thead th {
+    background-color: #f5a623; /* Gold header background */
+    color: black;
+    padding: 20px; /* Increased padding */
+}
+
+tbody tr {
+    background-color: #2a2f3b;
+    transition: background 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #343b4b;
+}
+
+tbody tr:hover {
+    background-color: #454d60;
+}
+
+th, td {
+    padding: 18px; /* Larger table cells */
+    border: 1px solid #444;
+}
+
+.delete-button {
+    font-size: 18px;
+    color: red;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    color: darkred;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #111; /* Dark background, matching the table headers */
+    color: #fff; /* White text for contrast */
+    font-size: 16px; /* Readable font size */
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
